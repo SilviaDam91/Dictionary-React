@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="container"> Container Bootstrap </div>
+        <div className="container"> </div>
 
         <img
           src={questionDog}
