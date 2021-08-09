@@ -1,4 +1,31 @@
+h1 {
+  font-size: medium;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+.App {
+  background-color: rgb(198, 211, 250);
+}
+
 .questionDog {
-  max-width: 400px;
+  max-width: 200px;
   display: block;
+  margin: 0 auto;
+}
+
+.search {
+  border-radius: 15px;
+  border: 2px #1a568b;
+  box-shadow: 1px 1px 1px #a5a3a3;
+  padding: 4px;
+  margin: 5px auto;
+}
+.search:hover {
+  background-color: #add1fc;
+  transition: all 200ms ease-in out;
+  opacity: 1;
 }

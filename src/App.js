@@ -7,11 +7,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="container">
-          {" "}
-          Dictionary
-          <SearchEngine />
-          <br />
+          <h1>Dictionary</h1>
           <img src={questionDog} alt="questionDog" className="questionDog" />
+          <br />
+          <SearchEngine />
         </div>
       </header>
     </div>
