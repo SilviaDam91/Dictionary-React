@@ -24,16 +24,17 @@ export default function SearchEngine() {
 
   return (
     <div className="SearchEngine">
-      <form onSubmit={search}>
-        <input
-          type="search"
-          autoFocus={true}
-          onChange={handleKeyword}
-          className="search"
-        />
-        <input type="submit" value="Search" className="search" />
-      </form>
-
+      <section>
+        <form onSubmit={search}>
+          <input
+            type="search"
+            autoFocus={true}
+            onChange={handleKeyword}
+            className="search"
+          />
+          <input type="submit" value="Search" className="search" />
+        </form>
+      </section>
       <Result results={result} />
     </div>
   );
