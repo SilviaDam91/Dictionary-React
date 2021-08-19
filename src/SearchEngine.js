@@ -42,6 +42,7 @@ export default function SearchEngine(props) {
               autoFocus={true}
               onChange={handleKeyword}
               className="search"
+              defaultValue={props.defaultKeyword}
             />
             <input type="submit" value="Search" className="search" />
           </form>

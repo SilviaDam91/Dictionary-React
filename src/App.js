@@ -8,13 +8,13 @@ function App() {
     <div className="App">
       <section className="App-header">
         <div className="container">
-          <h1>Dictionary</h1>
+          <h1 className="title">English dictionary</h1>
 
           <img src={questionDog} alt="questionDog" className="questionDog" />
 
           <br />
 
-          <SearchEngine defaultKeyword="sunset" />
+          <SearchEngine defaultKeyword="welcome" />
         </div>
       </section>
     </div>
