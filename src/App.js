@@ -14,7 +14,7 @@ function App() {
 
           <br />
 
-          <SearchEngine />
+          <SearchEngine defaultKeyword="sunset" />
         </div>
       </section>
     </div>

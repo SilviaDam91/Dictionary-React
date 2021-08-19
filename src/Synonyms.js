@@ -6,7 +6,7 @@ export default function Synonyms(props) {
 
   if (props.synonyms.length) {
     return (
-      <div className="Synonyms">
+      <section className="Synonyms">
         {" "}
         Synonyms:
         <ul>
@@ -14,7 +14,7 @@ export default function Synonyms(props) {
             return <li key={index}>{synonyms}</li>;
           })}
         </ul>
-      </div>
+      </section>
     );
   } else {
     return null;

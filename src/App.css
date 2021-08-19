@@ -1,34 +1,65 @@
+.App-header {
+  background: linear-gradient(
+    179.4deg,
+    rgb(253, 240, 233) 2.2%,
+    rgb(255, 194, 203) 96.2%
+  );
+}
+
 h1 {
   font-size: medium;
   text-align: center;
-  background-color: red;
 }
 
 .form {
   margin: 0 auto;
   text-align: center;
-  background-color: rgb(199, 198, 250);
-}
-
-.App-header {
-  background-color: rgb(250, 198, 234);
+  padding: 30px;
 }
 
 .questionDog {
-  max-width: 200px;
   display: block;
   margin: 0 auto;
+  border-radius: 8px;
+  width: 150px;
 }
 
 .search {
   border-radius: 15px;
   border: 2px #1a568b;
-  box-shadow: 1px 1px 1px #a5a3a3;
-  padding: 4px;
+  padding: 15px;
   margin: 5px auto;
 }
 .search:hover {
   background-color: #add1fc;
   transition: all 200ms ease-in out;
   opacity: 1;
+}
+.word {
+  box-shadow: 10px 10px 10px #f58181;
+  padding: 30px;
+  background-color: rgb(253, 240, 233);
+  font-size: medium;
+}
+
+.definition {
+  box-shadow: 10px 10px 10px #f58181;
+  padding: 30px;
+  background-color: rgb(253, 240, 233);
+}
+
+.description {
+  box-shadow: 4px 4px 4px #d89d9d;
+  padding: 30px;
+  background-color: rgb(253, 240, 233);
+}
+.Synonyms {
+  box-shadow: 1px 1px 1px #e2bfbf;
+  padding: 30px;
+  background-color: rgb(253, 240, 233);
+}
+.Phonetic {
+  box-shadow: 10px 10px 10px #f58181;
+  padding: 30px;
+  background-color: rgb(253, 240, 233);
 }
