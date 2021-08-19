@@ -1,14 +1,17 @@
 h1 {
   font-size: medium;
   text-align: center;
+  background-color: red;
 }
 
-form {
+.form {
   margin: 0 auto;
   text-align: center;
+  background-color: rgb(199, 198, 250);
 }
-.App {
-  background-color: rgb(198, 211, 250);
+
+.App-header {
+  background-color: rgb(250, 198, 234);
 }
 
 .questionDog {

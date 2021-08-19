@@ -24,7 +24,7 @@ export default function SearchEngine() {
 
   return (
     <div className="SearchEngine">
-      <section>
+      <section className="form">
         <form onSubmit={search}>
           <input
             type="search"
