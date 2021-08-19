@@ -16,12 +16,24 @@ export default function SearchEngine(props) {
     event.preventDefault();
     setKeyword(event.target.value);
   }
+  function handlePexelResponse(response) {
+    console.log(response.data);
+  }
 
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
     let pexelApiKey =
       "563492ad6f9170000100000107bb8c1c288948e3a86c8987a7160bdc";
+    let pexelApitUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+
+    let headers = { Authorization: `Bearer ${pexelApiKey}` };
+
+    axios
+      .get(pexelApitUrl, {
+        headers: headers,
+      })
+      .then(handlePexelResponse);
   }
 
   function handleSubmit(event) {

@@ -3,7 +3,6 @@ import "./App.css";
 
 import Synonyms from "./Synonyms.js";
 export default function Meaning(props) {
-  console.log(props.meaning);
   return (
     <div>
       {" "}
