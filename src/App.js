@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import questionDog from "./questionDog.jpg";
+import searching from "./searching.svg";
 import SearchEngine from "./SearchEngine";
 
 function App() {
@@ -10,11 +10,11 @@ function App() {
         <div className="container">
           <h1 className="title">English dictionary</h1>
 
-          <img src={questionDog} alt="questionDog" className="questionDog" />
+          <img src={searching} alt="searching" className="searching" />
 
           <br />
 
-          <SearchEngine defaultKeyword="welcome" />
+          <SearchEngine defaultKeyword="dog" />
         </div>
       </section>
     </div>

@@ -18,7 +18,6 @@ export default function SearchEngine(props) {
     setKeyword(event.target.value);
   }
   function handlePexelResponse(response) {
-    console.log(response.data);
     setPhoto(response.data.photos);
   }
 

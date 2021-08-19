@@ -18,27 +18,37 @@
   font-size: 40px;
   padding: 30px;
 }
+.listenButton {
+  border-radius: 15px;
+  border: 2px #f58181;
+  padding: 3px;
+  margin: 5px auto;
+  margin-right: 10px;
+  font-size: small;
+}
 
+.listenButton:hover {
+  background: 10px 10px 10px #f58181;
+  color: pink;
+}
 .form {
   text-align: center;
   padding: 30px;
 }
-
-.questionDog {
+.searching {
   display: block;
+  width: 200px;
   margin: 0 auto;
-  border-radius: 8px;
-  width: 150px;
 }
-
 .search {
   border-radius: 15px;
-  border: 2px #1a568b;
+  border: 2px #f58181;
   padding: 15px;
   margin: 5px auto;
+  font-size: small;
 }
 .search:hover {
-  background-color: #add1fc;
+  background-color: #f58181;
   transition: all 200ms ease-in out;
   opacity: 1;
 }
@@ -47,6 +57,10 @@
   padding: 30px;
   background-color: rgb(253, 240, 233);
   font-size: medium;
+}
+
+.pronunciation {
+  font-size: small;
 }
 
 .definition {
@@ -84,10 +98,7 @@
   text-decoration: none;
   color: black;
 }
-.Phonetic a:hover {
-  background: 10px 10px 10px #f58181;
-  color: pink;
-}
+
 .photoResult {
   border-radius: 15px;
 }
