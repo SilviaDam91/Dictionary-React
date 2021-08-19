@@ -20,6 +20,8 @@ export default function SearchEngine(props) {
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
+    let pexelApiKey =
+      "563492ad6f9170000100000107bb8c1c288948e3a86c8987a7160bdc";
   }
 
   function handleSubmit(event) {
