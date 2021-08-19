@@ -88,3 +88,6 @@
   background: 10px 10px 10px #f58181;
   color: pink;
 }
+.photoResult {
+  border-radius: 15px;
+}

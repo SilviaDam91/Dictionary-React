@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
 import Result from "./Result.js";
-
+import Photos from "./Photos.js";
 export default function SearchEngine(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [result, setResult] = useState(null);
   let [loaded, setLoaded] = useState(false);
+  let [photo, setPhoto] = useState(null);
 
   function handleResponse(response) {
     setResult(response.data[0]);
@@ -18,6 +19,7 @@ export default function SearchEngine(props) {
   }
   function handlePexelResponse(response) {
     console.log(response.data);
+    setPhoto(response.data.photos);
   }
 
   function search() {
@@ -25,7 +27,7 @@ export default function SearchEngine(props) {
     axios.get(apiUrl).then(handleResponse);
     let pexelApiKey =
       "563492ad6f9170000100000107bb8c1c288948e3a86c8987a7160bdc";
-    let pexelApitUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    let pexelApitUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
 
     let headers = { Authorization: `Bearer ${pexelApiKey}` };
 
@@ -61,6 +63,7 @@ export default function SearchEngine(props) {
             <input type="submit" value="Search" className="search" />
           </form>
         </section>
+        <Photos photos={photo} />
         <Result results={result} />
       </div>
     );
