@@ -18,38 +18,22 @@
   font-size: 40px;
   padding: 30px;
 }
-.listenButton {
-  border-radius: 15px;
-  border: 2px #f58181;
-  padding: 3px;
-  margin: 5px auto;
-  margin-right: 10px;
-  font-size: small;
-}
 
-.listenButton:hover {
-  background: 10px 10px 10px #f58181;
-  color: pink;
-}
 .form {
   text-align: center;
   padding: 25px;
 }
-.footer {
-  font-style: inherit;
-  text-align: center;
-  font-size: small;
+
+.photoResult {
+  border-radius: 15px;
 }
-.footer a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
+
 .searching {
   display: block;
   width: 200px;
   margin: 0 auto;
 }
+
 .search {
   border-radius: 15px;
   border: 2px #f58181;
@@ -75,6 +59,19 @@
 .pronunciation {
   font-size: small;
   border-radius: 10px;
+}
+.listenButton {
+  border-radius: 15px;
+  border: 2px #f58181;
+  padding: 3px;
+  margin: 5px auto;
+  margin-right: 10px;
+  font-size: small;
+}
+
+.listenButton:hover {
+  background: 10px 10px 10px #f58181;
+  color: pink;
 }
 
 .definition {
@@ -117,6 +114,13 @@
   color: black;
 }
 
-.photoResult {
-  border-radius: 15px;
+.footer {
+  font-style: inherit;
+  text-align: center;
+  font-size: small;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
