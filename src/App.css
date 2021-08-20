@@ -35,6 +35,16 @@
   text-align: center;
   padding: 30px;
 }
+.footer {
+  font-style: inherit;
+  text-align: center;
+  font-size: small;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
 .searching {
   display: block;
   width: 200px;

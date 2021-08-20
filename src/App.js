@@ -14,8 +14,18 @@ function App() {
 
           <br />
 
-          <SearchEngine defaultKeyword="dog" />
+          <SearchEngine defaultKeyword="koala" />
         </div>
+        <footer className="footer">
+          <a
+            href="https://github.com/SilviaDam91/Dictionary-React"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source code{" "}
+          </a>
+          by Silvia Pariota
+        </footer>
       </section>
     </div>
   );
